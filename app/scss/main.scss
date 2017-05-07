@@ -1,0 +1,72 @@
+/***************************************************************
+	main.less
+	Author: Calvin Evans - Webantic (webantic.co.uk)
+ ---------------------------------------------------------------
+  STYLE/STRUCTURE: RSCSS - http://rscss.io
+
+ • Think in components, named with 2 words (.screenshot-image)
+ • Components have elements, named with 1 word (.blog-post > .title)
+ • Name variants with a dash prefix (.shop-banner.-with-icon)
+ • Components can nest
+ • Remember you can extend to make things simple
+ **************************************************************/
+
+@import "_normalize";
+@import "_variables";
+@import "_animations";
+@import "_helpers";
+@import "components/*";
+
+html {
+	font-size: 62.5%;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+    font-size: 1.6em;
+    overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+    user-select: none;
+    color: inherit;
+}
+
+p {
+    margin-top: 0;
+    max-width: 70rem;
+}
+
+p, ul {
+    margin-bottom: 3rem;
+}
+
+p,li {
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+ul {
+    margin-top: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+fieldset {
+	border: 0;
+}
+
+h1,h2,h3 {
+    font-weight: 300;
+}
+
+iframe {
+    max-width: 100%;
+}
