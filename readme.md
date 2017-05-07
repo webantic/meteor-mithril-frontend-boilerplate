@@ -20,7 +20,7 @@ You'll only need to edit a few files before you get started:
 * **package.json**: update the app name if you want 
 * **app/index.ejs**: this is your HTML template. Customise your default title, meta tags etc here. 
 * **app/core/asteroid.js**: update the `endpoint` param to your meteor backend URL
-* **app/app_manifest.json**: [PWA manifest](see https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/)
+* **app/app_manifest.json**: [PWA manifest](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/)
 
 Spin up a dev server with hot module reload using `npm run serve`
 
