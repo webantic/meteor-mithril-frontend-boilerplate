@@ -19,8 +19,13 @@ export class Collection {
 		cursor.fetch = cursor.all
 		return cursor
 	}
+  findOne(query){
+    const mQ = new Mingo.Query(query)
+		let cursor = mQ.find(this.data)
+		return cursor.first()
+  }
   constructor (collectionName, ...subParams) {
-    asteroid.subscribe(collectionName, ...subParams)
+    this.subscription = asteroid.subscribe(collectionName, ...subParams)
     asteroid.ddp.on('added', ({collection, id, fields}) => {
       fields._id = id
 			this.upsert(fields)
@@ -32,6 +37,5 @@ export class Collection {
 			this.upsert(fields)
 			m.redraw()
 		})
-
   }
 }
