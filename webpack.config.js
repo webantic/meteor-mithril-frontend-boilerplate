@@ -38,7 +38,7 @@ module.exports = function (env) {
           exclude: /(node_modules)/,
           loader: 'babel-loader',
           query: {
-            plugins: ['transform-runtime', 'syntax-dynamic-import', 'transform-regenerator', 'transform-async-to-generator'],
+            plugins: ['transform-runtime', 'syntax-dynamic-import', 'transform-regenerator', 'transform-async-to-generator', ["transform-react-jsx", {"pragma": "m"}]],
             presets: [['es2015', {modules: false}], 'stage-0']
           }
         }
