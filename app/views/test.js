@@ -2,7 +2,11 @@ import m from 'mithril'
 
 class Test {
     view() {
-        return m('div', "Test Route")
+        return (
+          <div>
+            Hello from JSX!
+          </div>
+        )
     }
 }
 
